@@ -1,6 +1,8 @@
 # telemetryMDU
  Telemetry TIG stack for students of the Mälardalens Universitet (MDU) Västerås
 
+![](https://github.com/dankrauscisco/telemetryMDU/blob/master/png/telemetry_tig_lab.drawio.png)
+
 # Introduction
 
 This repository contains a Docker Compose file to spin up Telegraf, InfluxDB, and Grafana.
