@@ -4,8 +4,9 @@
 # Introduction
 
 This repository contains a Docker Compose file to spin up Telegraf, InfluxDB, and Grafana.
-Grafana will be pre-provisioned using the datasource.yml file within the grafana/grafana-provisioning/datasources folder.
-Telegraf will be pre-provisioned using the telegraf.conf file within the conf/telegraf folder.
+Grafana will be pre-provisioned using the Docker Compose file and the datasource.yml file within the grafana/grafana-provisioning/datasources folder.
+Telegraf will be pre-provisioned using the Docker Compose file and the telegraf.conf file within the conf/telegraf folder.
+Influxdb will be pre-provisioned using the Docker Compose file.
 
 # How to use the repository
 
