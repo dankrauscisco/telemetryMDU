@@ -125,7 +125,7 @@ telemetry model-driven
    encoding self-describing-gpb
    protocol tcp
 !
- sensor-group telemtry
+ sensor-group telemetry
   sensor-path Cisco-IOS-XR-qos-ma-oper:qos/interface-table/interface/input/statistics
   sensor-path Cisco-IOS-XR-infra-statsd-oper:infra-statistics/interfaces/interface/latest/generic-counters
 !
