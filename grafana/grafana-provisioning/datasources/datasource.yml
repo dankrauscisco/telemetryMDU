@@ -5,7 +5,7 @@ datasources:
   - name: InfluxDB_v2_InfluxQL
     type: influxdb
     access: proxy
-    url: http://10.48.188.61:8086
+    url: http://influxdb:8086
     jsonData:
       dbName: telemetry
       httpMode: GET
