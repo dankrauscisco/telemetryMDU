@@ -23,16 +23,7 @@ git clone https://github.com/dankrauscisco/telemetryMDU.git
 cd telemetryMDU
 ```
 
-3. Edit the "urls" section in the telegeraf.conf file within the conf/telegraf folder to reflect the IP address of the host OS running the docker containers
-
-```
-# Outputs to influxdb
-
-[[outputs.influxdb_v2]]
-  urls = [ "http://<IP address>:8086" ]
-```  
-
-4. Dial-out telemetry
+3. Dial-out telemetry
 
     The telegraf.conf file within the conf/telegraf folder has a section that specifies on which ports telegraf will listen to dial-out telemtry and which transport protocol it will use.
     
@@ -53,7 +44,7 @@ cd telemetryMDU
   service_address = ":57001"
 ```
 
-5. Dial-in telemetry
+4. Dial-in telemetry
 
     The telegraf.conf file within the conf/telegraf folder has a section that specifies the following parameters for dia-in telemetry.
     These telemetry collections towards the network devices will start/stop with the telegraf docker container.
@@ -105,19 +96,19 @@ cd telemetryMDU
   sample_interval = "10s"                               
 ```
 
-6. Bring up the TIG stack
+5. Bring up the TIG stack
 
 ```
 docker-compose up -d
 ```
 
-7. Verify the containers are up and running
+6. Verify the containers are up and running
 
 ```
 docker-compose ps
 ```
 
-8. Configuration example for dial-out telemetry IOS XR:
+7. Configuration example for dial-out telemetry IOS XR:
 ```
 telemetry model-driven
  destination-group telegraf
@@ -134,7 +125,7 @@ telemetry model-driven
   destination-id telegraf
 !
 ```
-9. Configuration example for dial-out telemetry IOS XE:
+8. Configuration example for dial-out telemetry IOS XE:
 ```
 telemetry receiver protocol telegraf
  host ip-address 10.48.188.61 57000
@@ -166,7 +157,7 @@ telemetry ietf subscription 102
 
 ```
 
-10. Configuration example for dial-in telemetry IOS XR:
+9. Configuration example for dial-in telemetry IOS XR:
 ```
 grpc
  port 57400
