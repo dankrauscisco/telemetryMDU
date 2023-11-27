@@ -21,7 +21,6 @@ git clone https://github.com/dankrauscisco/telemetryMDU.git
     The telegraf.conf file within the conf/telegraf folder has a section that specifies on which ports telegraf will listen to dial-out telemtry and which transport protocol it will use.
     
     Apply any changes as needed.
-
 ```
 # gRPC dial-out (routers sending MDT to telegraf)
 
